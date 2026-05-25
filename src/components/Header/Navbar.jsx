@@ -20,7 +20,9 @@ const Navbar = () => {
                         <li><Link to='/pages-to-read'>Pages to Read</Link></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Boi Poka</a>
+                <h2 className="text-xl font-serif font-black tracking-wider text-black ">
+                Boi<span className="text-amber-400">Poka</span>
+              </h2>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

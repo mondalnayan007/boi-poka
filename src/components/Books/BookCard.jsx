@@ -1,7 +1,6 @@
 import React from 'react';
 
 const BookCard = ({ book }) => {
-  // Destructuring your specific data structure
   const {
     bookName,
     author,
@@ -15,90 +14,97 @@ const BookCard = ({ book }) => {
     yearOfPublishing
   } = book;
 
+  // Rating star generator helper
+  const renderStars = (ratingNum) => {
+    const stars = [];
+    for (let i = 1; i <= 5; i++) {
+      if (i <= Math.floor(ratingNum)) {
+        stars.push(<span key={i} className="text-amber-400">★</span>);
+      } else if (i - 0.5 === ratingNum) {
+        stars.push(<span key={i} className="text-amber-400/80">½</span>);
+      } else {
+        stars.push(<span key={i} className="text-white/20">★</span>);
+      }
+    }
+    return stars;
+  };
+
   return (
-    <div className="group relative w-full max-w-[340px] h-[480px] bg-stone-900 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 flex flex-col justify-end border border-stone-800">
+    <div className="group relative w-full  h-[460px] bg-slate-900/40 rounded-2xl overflow-hidden border border-white/5 shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-amber-500/30 flex flex-col justify-end">
       
-      {/* Background Image Layer */}
-      <div className="absolute inset-0 w-full h-full z-0 transition-transform duration-700 group-hover:scale-110">
+      {/* Background Image & Ambient Radial Glow */}
+      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
         <img 
           src={image} 
           alt={bookName} 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
         />
-        {/* Deep Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/70 to-stone-950/20" />
+        {/* Carousel er shathe milate Deep Linear to Radial Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent z-10" />
+        <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-slate-950/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
       </div>
 
-      {/* Top Floating Badge (Category & Year) */}
+      {/* Top Badges (Category & Year) */}
       <div className="absolute top-4 left-4 right-4 z-20 flex justify-between items-center">
-        <span className="bg-amber-500/90 text-stone-950 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full backdrop-blur-sm">
+        <span className="text-[10px] font-bold uppercase tracking-widest text-amber-400 bg-amber-500/10 border border-amber-500/20 px-2.5 py-1 rounded-md backdrop-blur-md">
           {category}
         </span>
-        <span className="bg-stone-900/80 text-amber-400 text-xs font-mono font-bold px-2.5 py-1 rounded-md border border-stone-700/50 backdrop-blur-sm">
-          Est. {yearOfPublishing}
+        <span className="text-[10px] font-mono text-white/50 bg-white/5 px-2 py-1 rounded border border-white/10 backdrop-blur-sm">
+          {yearOfPublishing}
         </span>
       </div>
 
-      {/* Card Content Base */}
-      <div className="p-5 relative z-10 w-full bg-gradient-to-t from-stone-950 via-stone-950/95 to-transparent pt-20">
+      {/* Main Content Area */}
+      <div className="p-5 relative z-20 w-full transition-transform duration-500 transform translate-y-2 group-hover:translate-y-0">
         
-        {/* Dynamic Tags */}
-        <div className="flex gap-2 mb-2 flex-wrap">
+        {/* Dynamic Genre Tags */}
+        <div className="flex gap-1.5 mb-2 flex-wrap">
           {tags && tags.map((tag, index) => (
             <span 
               key={index} 
-              className="text-[10px] uppercase font-semibold tracking-wider text-stone-400 bg-stone-800/60 border border-stone-700/50 px-2 py-0.5 rounded"
+              className="text-[9px] uppercase font-mono tracking-wider text-slate-300 bg-white/5 border border-white/10 px-2 py-0.5 rounded"
             >
-              #{tag}
+              {tag}
             </span>
           ))}
         </div>
 
-        {/* Book Title & Author */}
-        <h3 className="text-xl font-serif font-bold text-stone-100 leading-tight group-hover:text-amber-400 transition-colors duration-300">
+        {/* Title & Author */}
+        <h3 className="text-lg md:text-xl font-serif font-bold text-white tracking-tight leading-snug line-clamp-1 group-hover:text-amber-400 transition-colors duration-300">
           {bookName}
         </h3>
-        <p className="text-sm text-stone-400 font-medium mt-1">
-          By <span className="text-stone-300 italic">{author}</span>
+        <p className="text-xs text-slate-400 mt-0.5">
+          By <span className="text-slate-300 italic group-hover:text-white transition-colors duration-300">{author}</span>
         </p>
 
-        {/* Rating & Pages Quick Info */}
-        <div className="flex justify-between items-center mt-3 pt-3 border-t border-stone-800 text-xs text-stone-400">
-          <div className="flex items-center gap-1.5">
-            <div className="flex text-amber-500">
-              {/* Simple Dynamic Star Rating View */}
-              {"★".repeat(Math.floor(rating))}
-              {rating % 1 !== 0 && "½"}
-            </div>
-            <span className="font-bold text-stone-200">{rating}</span>
+        {/* Middle Stats Divider */}
+        <div className="flex justify-between items-center mt-3 pt-3 border-t border-white/5 text-[11px] text-slate-400">
+          <div className="flex items-center gap-1">
+            <div className="flex tracking-tighter text-xs">{renderStars(rating)}</div>
+            <span className="font-bold text-slate-200 ml-0.5">{rating}</span>
           </div>
-          <div>
-            Pages: <span className="font-bold text-stone-200">{totalPages}p</span>
+          <div className="font-mono text-slate-400">
+            {totalPages} Pages
           </div>
         </div>
 
-        {/* --- UNIQUE HOVER REVEAL EFFECT --- */}
-        {/* Hover korle nicher ongshoti upore uthe review and publisher dekhabe */}
-        <div className="absolute inset-x-0 bottom-0 max-h-0 opacity-0 group-hover:max-h-[260px] group-hover:opacity-100 transition-all duration-500 ease-in-out bg-stone-950 p-5 border-t-2 border-amber-500 overflow-hidden flex flex-col justify-between z-30">
-          
-          <div>
-            <span className="text-[10px] text-amber-500 uppercase tracking-widest font-bold block mb-1">
-              Editorial Review
-            </span>
-            <p className="text-stone-300 text-xs leading-relaxed line-clamp-6 italic">
+        {/* --- DYNAMIC SLIDE-UP REVEAL PANEL --- */}
+        {/* Ei part ti Carousel er look guidelines follow kore seamlessly reveal hobe */}
+        <div className="max-h-0 opacity-0 group-hover:max-h-[150px] group-hover:opacity-100 transition-all duration-500 ease-in-out overflow-hidden mt-0 group-hover:mt-3">
+          <div className="pt-2 border-t border-white/10">
+            <p className="text-[11px] text-slate-300 leading-relaxed line-clamp-4 italic">
               {review}
             </p>
-          </div>
-
-          <div className="mt-4 pt-3 border-t border-stone-800 flex justify-between items-center text-[11px]">
-            <div className="text-stone-400">
-              Publisher: <span className="text-stone-200 font-semibold">{publisher}</span>
+            
+            <div className="mt-3 flex justify-between items-center text-[10px] text-slate-400">
+              <span className="truncate max-w-[140px]">
+                Pub: <strong className="text-slate-200">{publisher}</strong>
+              </span>
+              <button className="text-amber-400 hover:text-amber-300 font-bold tracking-wider uppercase flex items-center gap-0.5 transition-colors duration-200">
+                View Details ➔
+              </button>
             </div>
-            <button className="bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold px-3 py-1.5 rounded transition-colors duration-200">
-              Read More
-            </button>
           </div>
-
         </div>
 
       </div>
