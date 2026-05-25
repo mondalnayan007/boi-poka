@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const BookCard = ({ book }) => {
   const {
+    bookId,
     bookName,
     author,
     image,
@@ -100,9 +102,9 @@ const BookCard = ({ book }) => {
               <span className="truncate max-w-[140px]">
                 Pub: <strong className="text-slate-200">{publisher}</strong>
               </span>
-              <button className="text-amber-400 hover:text-amber-300 font-bold tracking-wider uppercase flex items-center gap-0.5 transition-colors duration-200">
+              <Link to={`/bookdetails/${bookId}`} className="text-amber-400 hover:text-amber-300 font-bold tracking-wider uppercase flex items-center gap-0.5 transition-colors duration-200">
                 View Details ➔
-              </button>
+              </Link >
             </div>
           </div>
         </div>

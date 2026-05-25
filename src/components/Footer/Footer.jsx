@@ -2,7 +2,7 @@ import React from 'react';
 
 const PremiumFooter = () => {
   return (
-    <footer className="relative w-full bg-gradient-to-b mt-4 from-slate-900 via-slate-950 to-black text-slate-400 font-sans overflow-hidden border-t border-white/5">
+    <footer className="relative w-full bg-gradient-to-b  from-slate-900 via-slate-950 to-black text-slate-400 font-sans overflow-hidden border-t border-white/5">
       
       {/* Hero Section-er moto Matrix Line-Grid Effect Texture */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff02_1px,transparent_1px),linear-gradient(to_bottom,#ffffff02_1px,transparent_1px)] bg-[size:40px_40px] mix-blend-overlay pointer-events-none" />

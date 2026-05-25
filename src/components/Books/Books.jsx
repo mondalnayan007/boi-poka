@@ -1,36 +1,62 @@
 import React, { useEffect, useState } from 'react';
-import BookCard from './BookCard';
+import BookCard from './BookCard'; // Automatic unique Vinyl ba Liquid premium cards trigger hbe
 
 const Books = () => {
+  const [allBooks, setAllBooks] = useState([]);
 
+  useEffect(() => {
+    fetch('booksData.json')
+      .then(res => res.json())
+      .then(data => setAllBooks(data));
+  }, []);
 
+  console.log(allBooks);
 
+  return (
+    <div className="w-full min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-black text-slate-300 py-16 px-4 md:px-12 relative overflow-hidden">
+      
+      {/* 1. Global Sync Identity: Matrix Line-Grid Effect Texture */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff01_1px,transparent_1px),linear-gradient(to_bottom,#ffffff01_1px,transparent_1px)] bg-[size:50px_50px] mix-blend-overlay pointer-events-none z-0" />
+      
+      {/* 2. Ambient Soft Aura Glows (Matches Navbar, Hero and Details Page) */}
+      <div className="absolute top-1/4 left-10 w-96 h-96 bg-amber-500/[0.02] rounded-full blur-[130px] pointer-events-none z-0" />
+      <div className="absolute bottom-1/3 right-10 w-[450px] h-[450px] bg-purple-500/[0.02] rounded-full blur-[150px] pointer-events-none z-0" />
 
-    const [allBooks, setAllBooks] = useState([]);
-
-    useEffect(() => {
-        fetch('booksData.json')
-            .then(res => res.json())
-            .then(data => setAllBooks(data))
-
-    }, [])
-
-    console.log(allBooks);
-
-
-    return (
-        <div>
-
-            <h2 className='text-3xl font-semibold text-center my-3'>Available Books</h2>
-            <h1 className='font-bold my-2'>Total Books: {allBooks.length}</h1>
-
-            <div className='grid grid-cols-1 sm:grid-cols-3  gap-4'>
-                {
-                    allBooks.map(book => <BookCard key={book.bookId} book={book}></BookCard>)
-                }
+      {/* Main Content Wrapper Container */}
+      <div className="max-w-7xl mx-auto relative z-10 space-y-12">
+        
+        {/* --- HEADER ARCHITECTURE --- */}
+        <div className="flex flex-col md:flex-row items-center md:items-end justify-between border-b border-white/5 pb-6 gap-4">
+          <div className="space-y-2 text-center md:text-left">
+            {/* Minimalist Tech Indicator Tag */}
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] font-mono uppercase tracking-[0.2em] text-slate-400">
+              <span className="w-1.5 h-1.5 bg-amber-500 rounded-full animate-pulse" />
+              LITERARY CATALOGUE
             </div>
+            <h2 className="text-3xl md:text-5xl font-serif font-black tracking-tight text-white">
+              Available <span className="text-amber-400 font-light italic font-sans">Books</span>
+            </h2>
+          </div>
+          
+          {/* Total Counter Meter matching Footer style */}
+          <div className="font-mono text-xs text-slate-500 tracking-widest bg-slate-950/60 border border-white/5 px-4 py-2 rounded-xl backdrop-blur-md">
+            TOTAL REGISTER: <span className="text-amber-400 font-bold">{allBooks.length} ITEMS</span>
+          </div>
         </div>
-    );
+
+        {/* --- PREMIUM GRID INTERFACE --- */}
+        {/* Automatic 3-column architecture, centered grid placement logic */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-8 justify-items-center">
+          {
+            allBooks.map(book => (
+              <BookCard key={book.bookId} book={book} />
+            ))
+          }
+        </div>
+
+      </div>
+    </div>
+  );
 };
 
 export default Books;

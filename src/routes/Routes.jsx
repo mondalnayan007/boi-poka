@@ -3,25 +3,33 @@ import Home from "../pages/Home/Home";
 import Root from "../pages/Root/Root";
 import Signin from "../pages/Signin/Signin";
 import Signup from "../pages/Signup/Signup";
+import BookDetails from "../pages/BookDetails/BookDetails";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    children : [
-        {
-           index:true,
-           
-           Component : Home
-        }
+    children: [
+      {
+        index: true,
+
+        Component: Home
+      },
+      {
+        
+        path: '/bookdetails/:id',
+        loader: () => fetch('/booksData.json'),
+        Component: BookDetails
+      },
     ]
   },
+
   {
-    path : '/signin',
-    Component : Signin
+    path: '/signin',
+    Component: Signin
   },
   {
-    path : '/signup',
-    Component : Signup
+    path: '/signup',
+    Component: Signup
   }
 ]);
