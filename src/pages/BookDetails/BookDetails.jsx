@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLoaderData, useParams, useNavigate } from 'react-router';
+import { addBooksToLocal } from '../../Utils/Utils';
 
 const BookDetails = () => {
   const loaderData = useLoaderData();
@@ -9,6 +10,7 @@ const BookDetails = () => {
 
   const [books, setBooks] = useState(loaderData);
   const [loading, setLoading] = useState(!loaderData);
+  const [marked,setMarked] = useState(false);
 
   useEffect(() => {
     if (!loaderData) {
@@ -27,6 +29,16 @@ const BookDetails = () => {
       setBooks(loaderData);
     }
   }, [loaderData]);
+
+ const handleMarkAsRead = (id)=>{
+     addBooksToLocal(id);
+     setMarked(true);
+
+     
+ }
+
+
+
 
   if (loading) {
     return (
@@ -183,7 +195,7 @@ const BookDetails = () => {
             </button>
 
             {/* Secondary Action */}
-            <button className="w-full sm:flex-1 bg-slate-900/60 hover:bg-white/5 text-white font-mono font-bold text-xs uppercase tracking-[0.15em] py-4 px-6 rounded-2xl border border-white/10 backdrop-blur-md transition-all duration-300 transform active:scale-95 flex items-center justify-center gap-2">
+            <button onClick={()=>handleMarkAsRead(id)}  className="w-full sm:flex-1 cursor-pointer bg-slate-900/60 hover:bg-white/5 text-white font-mono font-bold text-xs uppercase tracking-[0.15em] py-4 px-6 rounded-2xl border border-white/10 backdrop-blur-md transition-all duration-300 transform active:scale-95 flex items-center justify-center gap-2">
               Mark As Read
               <span className="text-slate-500">➔</span>
             </button>
