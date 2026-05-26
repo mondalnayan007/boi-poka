@@ -11,7 +11,8 @@
     "tags": ["Fiction", "Romance"],
     "publisher": "Scribner",
     "yearOfPublishing": 1925,
-    "online": "https://www.gutenberg.org/cache/epub/64317/pg64317-images.html"
+    "online": "https://www.gutenberg.org/cache/epub/64317/pg64317-images.html",
+    "language": "English"
   },
   {
     "bookId": 2,
@@ -25,7 +26,8 @@
     "tags": ["Drama", "Social Justice"],
     "publisher": "J.B. Lippincott & Co.",
     "yearOfPublishing": 1960,
-    "online": "https://www.raio.org/TKMFullText.pdf"
+    "online": "https://www.raio.org/TKMFullText.pdf",
+    "language": "English"
   },
   {
     "bookId": 3,
@@ -39,7 +41,8 @@
     "tags": ["Dystopian", "Political"],
     "publisher": "Secker & Warburg",
     "yearOfPublishing": 1949,
-    "online": "https://www.philosophia.cl/biblioteca/orwell/1984.pdf"
+    "online": "https://www.philosophia.cl/biblioteca/orwell/1984.pdf",
+    "language": "English"
   },
   {
     "bookId": 4,
@@ -53,7 +56,8 @@
     "tags": ["Young Adult", "Identity"],
     "publisher": "Little, Brown and Company",
     "yearOfPublishing": 1951,
-    "online": "https://giove.isti.cnr.it/demo/eread/Libri/sad/Rye.pdf"
+    "online": "https://giove.isti.cnr.it/demo/eread/Libri/sad/Rye.pdf",
+    "language": "English"
   },
   {
     "bookId": 5,
@@ -67,7 +71,8 @@
     "tags": ["Romance", "Satire"],
     "publisher": "T. Egerton, Whitehall",
     "yearOfPublishing": 1813,
-    "online": "https://giove.isti.cnr.it/demo/eread/Libri/joy/Pride.pdf"
+    "online": "https://giove.isti.cnr.it/demo/eread/Libri/joy/Pride.pdf",
+    "language": "English"
   },
   {
     "bookId": 6,
@@ -81,7 +86,8 @@
     "tags": ["Adventure", "Epic"],
     "publisher": "Allen & Unwin",
     "yearOfPublishing": 1937,
-    "online": "https://rsd2-alert-durden-reading-room.weebly.com/uploads/6/7/1/6/6716949/the_hobbit_tolkien.pdf"
+    "online": "https://rsd2-alert-durden-reading-room.weebly.com/uploads/6/7/1/6/6716949/the_hobbit_tolkien.pdf",
+    "language": "English"
   },
   {
     "bookId": 7,
@@ -95,7 +101,8 @@
     "tags": ["Magic", "Young Adult"],
     "publisher": "Bloomsbury",
     "yearOfPublishing": 1997,
-    "online": "https://kvongcmehsanalibrary.wordpress.com/wp-content/uploads/2021/07/harrypotter.pdf"
+    "online": "https://kvongcmehsanalibrary.wordpress.com/wp-content/uploads/2021/07/harrypotter.pdf",
+    "language": "English"
   },
   {
     "bookId": 8,
@@ -109,7 +116,8 @@
     "tags": ["Philosophical", "Adventure"],
     "publisher": "HarperCollins",
     "yearOfPublishing": 1988,
-    "online": "https://www.shivbabas.org/_files/ugd/8cc233_518f9b567d80476590607c7210db359e.pdf?index=true"
+    "online": "https://www.shivbabas.org/_files/ugd/8cc233_518f9b567d80476590607c7210db359e.pdf?index=true",
+    "language": "English"
   },
   {
     "bookId": 9,
@@ -123,6 +131,142 @@
     "tags": ["Suspense", "Psychological"],
     "publisher": "Riverhead Books",
     "yearOfPublishing": 2015,
-    "online": "https://everything830.wordpress.com/wp-content/uploads/2016/08/the_girl_on_the_train_-_paula_hawkins.pdf"
+    "online": "https://everything830.wordpress.com/wp-content/uploads/2016/08/the_girl_on_the_train_-_paula_hawkins.pdf",
+    "language": "English"
+  },
+  {
+    "bookId": 10,
+    "bookName": "শেষের কবিতা",
+    "author": "রবীন্দ্রনাথ ঠাকুর",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0rmFFOm-k-jPwpnsuPkxBHJLxV_1YPnhMxw&s",
+    "review": "১৯২৮ সালে রচিত রবীন্দ্রনাথ ঠাকুরের একটি কালজয়ী রোমান্টিক উপন্যাস। অমিত ও লাবণ্যের কাব্যিক সংলাপের মধ্য দিয়ে এটি প্লেটোনিক প্রেম, বুদ্ধিবৃত্তিক সাহচর্য এবং আদর্শ প্রেম বনাম দৈনন্দিন বাস্তবতার মধ্যকার পার্থক্যকে ফুটিয়ে তুলেছে।",
+    "totalPages": 188,
+    "rating": 4.6,
+    "category": "ধ্রুপদী সাহিত্য",
+    "tags": ["রোমান্স", "কাব্যিক কথাসাহিত্য"],
+    "publisher": "বিশ্বভারতী",
+    "yearOfPublishing": 1929,
+    "online": "https://upload.wikimedia.org/wikipedia/commons/a/ad/%E0%A6%B6%E0%A7%87%E0%A6%B7%E0%A7%87%E0%A6%B0_%E0%A6%95%E0%A6%AC%E0%A6%BF%E0%A6%A4%E0%A6%BE_-_%E0%A6%B0%E0%A6%AC%E0%A7%80%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A6%A8%E0%A6%BE%E0%A6%A5_%E0%A6%A0%E0%A6%BE%E0%A6%95%E0%A7%81%E0%A6%B0.pdf",
+    "language": "Bangla"
+  },
+  {
+    "bookId": 11,
+    "bookName": "পরিণীতা",
+    "author": "শরৎচন্দ্র চট্টোপাধ্যায়",
+    "image": "https://baatighar.com/web/image/product.product/90053/image_1024",
+    "review": "বিংশ শতাব্দীর শুরুর দিকের কলকাতার পটভূমিতে রচিত একটি সামাজিক-রোমান্টিক উপন্যাস। ললিতা এবং শেখরের চরিত্রের মাধ্যমে তৎকালীন সমাজব্যবস্থা, অর্থনৈতিক শোষণ এবং প্রকাশ না পাওয়া নিখাদ ভালোবাসার গল্প এখানে ফুটিয়ে তোলা হয়েছে।",
+    "totalPages": 112,
+    "rating": 4.5,
+    "category": "ধ্রুপদী সাহিত্য",
+    "tags": ["নাট্যরূপ", "রোমান্স"],
+    "publisher": "গুরুদাস চট্টোপাধ্যায় অ্যান্ড সন্স",
+    "yearOfPublishing": 1914,
+    "online": "https://upload.wikimedia.org/wikisource/bn/a/a0/%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%A3%E0%A7%80%E0%A6%A4%E0%A6%BE_-_%E0%A6%B6%E0%A6%B0%E0%A7%8E%E0%A6%9A%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0_%E0%A6%9A%E0%A6%9F%E0%A7%8D%E0%A6%9F%E0%A7%8B%E0%A6%AA%E0%A6%BE%E0%A6%A7%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AF%E0%A6%BC.pdf",
+    "language": "Bangla"
+  },
+  {
+    "bookId": 12,
+    "bookName": "দেবদাস",
+    "author": "শরৎচন্দ্র চট্টোপাধ্যায়",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxjAWj4fQGMY-2SOXA1vqvLjD2nhxKrl4iiQ&s",
+    "review": "বাংলা সাহিত্যের অন্যতম ট্রাজিক এবং চিরন্তন প্রেমের গল্প। সামাজিক অহংকার এবং পার্বতীর প্রতি গভীর অপূর্ণ ভালোবাসার মাঝে পড়ে দেবদাসের আত্মবিধ্বংসী হয়ে ওঠার গল্প, সাথে চন্দ্রমুখীর নিঃস্বার্থ আত্মত্যাগ এতে নিখুঁতভাবে চিত্রিত হয়েছে।",
+    "totalPages": 128,
+    "rating": 4.7,
+    "category": "কথাসাহিত্য",
+    "tags": ["বিয়োগান্তক", "রোমান্স"],
+    "publisher": "মমতাজ পাবলিকেশন্স",
+    "yearOfPublishing": 1917,
+    "online": "https://bangodarshan.com/ratan/stock/DEBDAS.pdf",
+    "language": "Bangla"
+  },
+  {
+    "bookId": 13,
+    "bookName": "কৃষ্ণপক্ষ",
+    "author": "হুমায়ূন আহমেদ",
+    "image": "https://cdn.othoba.com/images/thumbs/1866473_-.jpeg",
+    "review": "অরু এবং মুহিবের জীবনকে কেন্দ্র করে গড়ে ওঠা হুমায়ূন আহমেদের একটি অত্যন্ত আবেগঘন সমসাময়িক উপন্যাস। এটি তরুণ প্রেমের নিষ্পাপতা, অপ্রত্যাশিত ভাগ্যের নিষ্ঠুরতা এবং মানুষের সম্পর্কের জটিল টানাপোড়েনকে চমৎকারভাবে ফুটিয়ে তুলেছে।",
+    "totalPages": 85,
+    "rating": 4.4,
+    "category": "কথাসাহিত্য",
+    "tags": ["নাট্যরূপ", "সমসাময়িক"],
+    "publisher": "অনন্যা",
+    "yearOfPublishing": 1992,
+    "online": "https://www.banglabookshelf.com/Story%20Books/Humayun%20Ahmed/Miscellaneous/Krishno%20Pokkho%20By%20Humayun%20Ahmed.pdf",
+    "language": "Bangla"
+  },
+  {
+    "bookId": 14,
+    "bookName": "ন হন্যতে",
+    "author": "মৈত্রেয়ী দেবী",
+    "image": "https://images.boitoi.com.bd/book/48b67235-3b49-4a32-8ca0-f2037517e6b7_lg.jpg",
+    "review": "মির্চা এলিয়াডের 'বেঙ্গল নাইটস' উপন্যাসের একটি মর্মস্পর্শী প্রতিক্রিয়া হিসেবে লেখা আত্মজীবনীমূলক উপন্যাস। মৈত্রেয়ী দেবী এখানে তার স্মৃতি, ভিন্ন সংস্কৃতির মধ্যকার মানসিক বন্ধন এবং 'প্রকৃত প্রেম কখনো মরে না' এই দর্শনকে ফুটিয়ে তুলেছেন।",
+    "totalPages": 150,
+    "rating": 4.6,
+    "category": "ধ্রুপদী সাহিত্য",
+    "tags": ["আত্মজীবনীমূলক", "রোমান্স"],
+    "publisher": "নবজাতক প্রিন্টার্স",
+    "yearOfPublishing": 1974,
+    "online": "https://cdlb.com.bd/wp-content/uploads/2025/05/Na-Hanyate-Moitreyee-Debi-Imran-Hosain.pdf",
+    "language": "Bangla"
+  },
+  {
+    "bookId": 15,
+    "bookName": "কপালকুণ্ডলা",
+    "author": "বঙ্কিমচন্দ্র চট্টোপাধ্যায়",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqXqOmLJ8TMW8jaJrx5IaJmkJywM3gwgzfDw&s",
+    "review": "বঙ্কিমচন্দ্রের একটি ক্লাসিক রোমান্স-ড্রামা উপন্যাস। গল্পটি গড়ে উঠেছে বনে বড় হওয়া এক মেয়েকে কেন্দ্র করে যাকে একজন তান্ত্রিক ঋষি লালন-পালন করেছিলেন। পরবর্তীতে নবকুমার নামের এক শহরের যুবকের সাথে তার বিয়ে হয় এবং নাগরিক সমাজের সাথে খাপ খাইয়ে নেওয়ার ট্রাজিক সংগ্রাম এতে দেখানো হয়েছে।",
+    "totalPages": 72,
+    "rating": 4.5,
+    "category": "ধ্রুপদী সাহিত্য",
+    "tags": ["রোমান্স", "ঐতিহাসিক কথাসাহিত্য"],
+    "publisher": "বিশ্বসাহিত্য কেন্দ্র",
+    "yearOfPublishing": 1866,
+    "online": "https://bangodarshan.com/ratan/stock/KAPALKUNDALA.pdf",
+    "language": "Bangla"
+  },
+  {
+    "bookId": 16,
+    "bookName": "চরিত্রহীন",
+    "author": "শরৎচন্দ্র চট্টোপাধ্যায়",
+    "image": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1589430228i/53410607.jpg",
+    "review": "তৎকালীন সমাজের নৈতিকতা, বিশ্বস্ততা এবং নারীদের ভূমিকা নিয়ে গড়ে ওঠা প্রচলিত কুসংস্কারগুলোকে চ্যালেঞ্জ করে লেখা একটি প্রগতিশীল উপন্যাস। কিরণময়ী, সাবিত্রী এবং সতীশের জটিল জীবনের মধ্য দিয়ে মানুষের ভেতরের আসল গুণাবলীকে এখানে তুলে ধরা হয়েছে।",
+    "totalPages": 368,
+    "rating": 4.6,
+    "category": "কথাসাহিত্য",
+    "tags": ["সামাজিক নাট্যরূপ", "মনস্তাত্ত্বিক"],
+    "publisher": "দে'জ পাবলিশিং",
+    "yearOfPublishing": 1917,
+    "online": "https://upload.wikimedia.org/wikisource/bn/2/23/%E0%A6%9A%E0%A6%B0%E0%A6%BF%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%B9%E0%A7%80%E0%A6%A8_-_%E0%A6%B6%E0%A6%B0%E0%A7%8E%E0%A6%9A%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0_%E0%A6%9A%E0%A6%9F%E0%A7%8D%E0%A6%9F%E0%A7%8B%E0%A6%AA%E0%A6%BE%E0%A6%A7%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AF%E0%A6%BC.pdf",
+    "language": "Bangla"
+  },
+  {
+    "bookId": 17,
+    "bookName": "চোখের বালি",
+    "author": "রবীন্দ্রনাথ ঠাকুর",
+    "image": "https://pbs.com.bd/_next/image?url=https%3A%2F%2Ffs.pbs.com.bd%2FDIR%2FCom%2FPBS%2FProduct%2FImageDetails%2F2502583.jpg&w=640&q=75",
+    "review": "মানুষের মনস্তাত্ত্বিক জটিলতা, নারীর আকাঙ্ক্ষা এবং সামাজিক বিধিনিষেধ অন্বেষণকারী একটি অনবদ্য সৃষ্টি। উচ্চশিক্ষিত ও বুদ্ধিমতী বিধবা বিনোদিনী, তার সখী আশালতা, মহেন্দ্র এবং বিহারীকে কেন্দ্র করে আবর্তিত জটিল আবেগের জাল এখানে ফুটিয়ে তোলা হয়েছে।",
+    "totalPages": 248,
+    "rating": 4.7,
+    "category": "ধ্রুপদী সাহিত্য",
+    "tags": ["মনস্তাত্ত্বিক", "নাট্যরূপ"],
+    "publisher": "সৃষ্টি পাবলিশার্স",
+    "yearOfPublishing": 1903,
+    "online": "https://in.okfn.org/files/2013/07/%E0%A6%9A%E0%A7%8B%E0%A6%96%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A6%BE%E0%A6%B2%E0%A6%BF-%E0%A6%B0%E0%A6%AC%E0%A7%80%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A6%A8%E0%A6%BE%E0%A6%A5-%E0%A6%A0%E0%A6%BE%E0%A6%95%E0%A7%81%E0%A6%B0-.pdf",
+    "language": "Bangla"
+  },
+  {
+    "bookId": 18,
+    "bookName": "সাতকাহন",
+    "author": "সমরেশ মজুমদার",
+    "image": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1317038528i/12725711.jpg",
+    "review": "দীপাবলী নামের এক লড়াকু মেয়ের জীবন সংগ্রাম ও ঘুরে দাঁড়ানোর গল্প নিয়ে রচিত একটি মহাকাব্যিক উপন্যাস। উত্তরবঙ্গের চা বাগান এবং বিংশ শতাব্দীর মাঝামাঝি সময়ের কলকাতার পটভূমিতে লেখা এই বইটি নারীর স্বাবলম্বী হওয়ার এক অনন্য দলিল।",
+    "totalPages": 848,
+    "rating": 4.8,
+    "category": "কথাসাহিত্য",
+    "tags": ["নারী নেতৃত্ব", "সমসাময়িক নাট্যরূপ"],
+    "publisher": "আনন্দ পাবলিশার্স",
+    "yearOfPublishing": 2004,
+    "online": "https://archive.org/details/in.ernet.dli.2015.453498/page/n1/mode/1up",
+    "language": "Bangla"
   }
 ]
