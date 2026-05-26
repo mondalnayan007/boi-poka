@@ -32,6 +32,8 @@ const BookCard = ({ book }) => {
   };
 
   return (
+
+    <Link to={`/bookdetails/${bookId}`}>
     <div className="group relative w-full  h-[460px] bg-slate-900/40 rounded-2xl overflow-hidden border border-white/5 shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-amber-500/30 flex flex-col justify-end">
       
       {/* Background Image & Ambient Radial Glow */}
@@ -112,6 +114,7 @@ const BookCard = ({ book }) => {
       </div>
 
     </div>
+    </Link>
   );
 };
 
