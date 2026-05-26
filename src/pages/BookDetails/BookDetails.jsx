@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useLoaderData, useParams, useNavigate } from 'react-router';
+import { useLoaderData, useParams, useNavigate, Link } from 'react-router';
 import { addBooksToLocal } from '../../Utils/Utils';
 
 const BookDetails = () => {
@@ -71,7 +71,8 @@ const BookDetails = () => {
     review,
     tags,
     totalPages,
-    yearOfPublishing
+    yearOfPublishing,
+    online
   } = singleBook;
 
   return (
@@ -190,9 +191,9 @@ const BookDetails = () => {
           <div className="pt-4 flex flex-col sm:flex-row gap-4 items-center">
             
             {/* Primary Action */}
-            <button className="w-full sm:flex-1 bg-white hover:bg-amber-400 text-slate-950 font-serif font-black text-xs uppercase tracking-[0.2em] py-4 px-6 rounded-2xl shadow-xl transition-all duration-300 transform active:scale-95">
-              Secure Hardcover List
-            </button>
+            <Link to={`${online}`} target="_blank"  className="w-full sm:flex-1 cursor-pointer bg-white hover:bg-amber-400 text-slate-950 font-serif font-black text-xs uppercase tracking-[0.2em] py-4 px-6 rounded-2xl shadow-xl transition-all duration-300 transform active:scale-95">
+              Read Online
+            </Link>
 
             {/* Secondary Action */}
             <button onClick={()=>handleMarkAsRead(id)}  className="w-full sm:flex-1 cursor-pointer bg-slate-900/60 hover:bg-white/5 text-white font-mono font-bold text-xs uppercase tracking-[0.15em] py-4 px-6 rounded-2xl border border-white/10 backdrop-blur-md transition-all duration-300 transform active:scale-95 flex items-center justify-center gap-2">
