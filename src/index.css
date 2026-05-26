@@ -1,2 +1,8 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+@theme {
+  --animate-shimmer: shimmer 4s infinite linear;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
